@@ -1,0 +1,74 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.header span {
+    color: #007aff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.header h2 {
+    margin: 0;
+}
+
+.prescription_card {
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 15px;
+    background-color: #f8f8f8;
+}
+
+.prescription_card label {
+    font-size: 14px;
+    margin-top: 10px;
+    display: block;
+}
+
+.prescription_card input {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background: transparent;
+    width: 100%;
+    padding: 5px;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.qr_section {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.qr_section img {
+    width: 200px;
+    height: 200px;
+}
+
+.note {
+    font-size: 12px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.save_btn {
+    display: block;
+    margin: 30px auto 10px;
+    padding: 10px 20px;
+    background-color: #007aff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
