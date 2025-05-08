@@ -9,7 +9,7 @@ function sendTo(url){
 document.querySelectorAll(".bottom_element_grid").forEach((element) => {
     element.addEventListener('click', () => {
         const page = element.getAttribute("send");
-        sendTo(page);
+        if (page) sendTo(page === "recepty" ? "recepta" : page);
     });
 });
 
