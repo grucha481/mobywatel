@@ -1,7 +1,6 @@
 var params = new URLSearchParams(window.location.search);
 
 function sendTo(url){
-    // Preserve current URL parameters when navigating
     const currentParams = window.location.search;
     window.location.href = "./" + url + ".html" + currentParams;
 }
@@ -9,7 +8,13 @@ function sendTo(url){
 document.querySelectorAll(".bottom_element_grid").forEach((element) => {
     element.addEventListener('click', () => {
         const page = element.getAttribute("send");
-        sendTo(page);
+        if (page) {
+            if (page === "recepty") {
+                sendTo("recepta"); // nowy widok
+            } else {
+                sendTo(page); // stare widoki nadal działają
+            }
+        }
     });
 });
 
